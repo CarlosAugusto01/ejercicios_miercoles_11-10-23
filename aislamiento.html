@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>aislamiento</title>
+</head>
+<body>
+    <h2>separamos vocales</h2>
+   <script>
+        let vocales = ["a","e","i","o","u"]
+        document.write("computacion e informatica","<br>");
+        let texto = 'computacion e informatica';
+
+        function aislar(texto){
+            let resultado = ""; //cadena para almacenar
+            for ( const letra of texto)
+            if(vocales.includes(letra))
+                resultado += `${letra}`;
+            return resultado;
+        }
+        texto = aislar(texto);
+        document.write(texto);
+    </script>
+<br>
+<br>
+    <script>
+        let consonantes = ["b", "c", "d", "f", "g", "h", "j", "k", "l", "m", "n", "ñ", "p", "q", "r", "s", "t", "v", "w", "x", "y" , "z"]
+        var palabra = prompt("inserta la palabra");
+        document.write(palabra+"<br>")
+        function aislar(palabra){
+            let resultado = ""; //cadena para almacenar
+            for ( const letra of palabra)
+            if(consonantes.includes(letra))
+                resultado += `${letra}`;
+            return resultado;
+        }
+        palabra = aislar(palabra);
+        document.write(palabra);
+    </script>
+</body>
+</html>
